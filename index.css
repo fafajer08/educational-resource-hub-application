@@ -62,7 +62,7 @@ body, html {
   z-index: 0;
 }
 
-.home-text {
+.introduction-text {
   position: absolute;
   bottom: 100px;
   left: 100px;
@@ -124,11 +124,8 @@ body, html {
   max-height: 600px; /* Maximum height for cards */
 }
 
-
-
-
 /* Categories Section */
-#categories-section {
+#featured {
   padding-top: 20px; /* Add padding at the top to prevent overlap with the background image section */
   padding-bottom: 20px; /* Add padding at the bottom if needed */
   overflow: hidden; /* Ensure content does not overflow */
@@ -136,7 +133,7 @@ body, html {
 }
 
 /* Prevent category section from overflowing */
-#categories-section .container {
+#featured .container {
   position: relative;
   z-index: 2;
   padding: 0 15px; /* Add padding if needed to ensure proper spacing */
@@ -178,7 +175,7 @@ body, html {
 }
 
 /* Cards Section Styles */
-#cards-section {
+#resources {
   background-color: #f8f9fa; /* Light background color for the card section */
 }
 
