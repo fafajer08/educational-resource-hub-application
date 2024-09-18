@@ -1,0 +1,377 @@
+{
+
+}
+/* Global styles */
+body, html {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.navbar {
+  transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+.navbar-nav{
+  text-justify:inter-word;
+}
+.nav-item {
+  font-size: 25px;
+}
+/* Apply the font to the entire navbar */
+.navbar {
+  font-family: 'Roboto', sans-serif; /* Set the font family for the navbar */
+}
+
+.navbar-nav .nav-link {
+  font-family: 'Roboto', sans-serif; /* Ensures links use the same font */
+  font-weight: 500; /* Optional: Adjust the font weight */
+}
+
+/* Apply font styles to the navbar brand */
+.navbar-brand {
+  font-family: 'Roboto', sans-serif; /* Ensures brand name uses the same font */
+  font-weight: 700; /* Optional: Make brand name bold */
+  font-size: 30px;
+}
+
+
+.home {
+  position: relative;
+  height: 100vh; /* Full screen height */
+  background-image: url('./images/hero-bg.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  z-index: 1;
+}
+
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay, adjust opacity as needed */
+  z-index: 0;
+}
+
+.home-text {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  z-index: 1; /* Ensure text is above the overlay */
+}
+
+.home h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.home p {
+  font-size: 1.25rem;
+}
+
+.feature-logo img {
+  max-width: 50px; /* Adjust logo size */
+}
+
+/* Card Image with min-height and max-height */
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  min-height: 320px; /* Maximum height for card images */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+/* Ensure the card body content is properly aligned */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures space between title and text */
+}
+
+/* Set minimum height for cards to ensure uniformity */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensures card fills its container */
+  max-height: 500px; /* Maximum height for cards */
+}
+/* Ensure card titles and text are aligned properly */
+.card-title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.card-text {
+  color: #6c757d;
+}
+
+/* Set min-height for card bodies to ensure content alignment */
+.card-body {
+  min-height: 150px; /* Minimum height for the card body */
+}
+
+/* Set max-height for cards */
+.card {
+  max-height: 600px; /* Maximum height for cards */
+}
+
+
+
+
+/* Categories Section */
+#categories-section {
+  padding-top: 20px; /* Add padding at the top to prevent overlap with the background image section */
+  padding-bottom: 20px; /* Add padding at the bottom if needed */
+  overflow: hidden; /* Ensure content does not overflow */
+  background-color: #f8f9fa; /* Background color to distinguish from other sections */
+}
+
+/* Prevent category section from overflowing */
+#categories-section .container {
+  position: relative;
+  z-index: 2;
+  padding: 0 15px; /* Add padding if needed to ensure proper spacing */
+}
+
+.card {
+  margin-bottom: 15px; /* Ensure proper spacing between cards */
+}
+
+/* Background Image Section Styles */
+#background-image-section {
+  background-image: url('./images/hero-2.jpeg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* Overlay with rgba */
+#background-image-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Adjust the rgba value for darkness */
+  z-index: 1;
+}
+
+/* Ensure the content inside the section is above the overlay */
+#background-image-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Cards Section Styles */
+#cards-section {
+  background-color: #f8f9fa; /* Light background color for the card section */
+}
+
+.card-img-top {
+  height: 300px; /* Adjust image height if needed */
+  object-fit: cover; /* Ensure image covers the area without distortion */
+}
+
+#our-teachers img {
+  height: 150px; /* Set a fixed height */
+  width: 200px;
+  object-fit: cover; /* Ensure the image covers the set height without distortion */
+}
+
+/* Wrapper for consistent image dimensions */
+.img-wrapper {
+  height: 150px; /* Same height as set for images */
+  width: 150px; /* Set width to ensure images are uniform */
+  overflow: hidden; /* Hide overflow if image is larger */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-wrapper img {
+  height: 100%;
+  width: auto;
+}
+
+/* Achievements Section */
+#achievements {
+  position: relative;
+  background-image: url('./images/hero-3.jpeg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0; /* Adjust the padding as needed */
+  color: #fff; /* Text color */
+  overflow: hidden; /* Ensure the overlay covers the entire section */
+}
+
+#achievements .overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the rgba value for darkness */
+  z-index: 1; /* Ensure overlay is above the background but below the content */
+}
+
+#achievements .container {
+  position: relative; /* Ensure the container content is above the overlay */
+  z-index: 2; /* Ensure the content is above the overlay */
+}
+
+#achievements h1 {
+  font-size: 3.5rem; /* Adjust font size as needed */
+  margin: 0; /* Reset margin */
+  font-weight: bold; /* Make text bold */
+}
+
+#achievements p {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  margin: 0; /* Reset margin */
+}
+
+#achievements .col-md-3, #achievements .col-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer Styles */
+footer {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background with RGBA */
+}
+
+footer .text-light {
+  color: #ffffff; /* Light color for text and icons */
+}
+
+footer a {
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s; /* Smooth transition for hover effects */
+}
+
+footer a:hover {
+  color: #ffcc00; /* Change color on hover */
+}
+
+/* Icon Styles */
+footer .fa {
+  font-size: 1.5rem; /* Icon size */
+}
+
+footer .fa-facebook-f:hover {
+  color: #3b5998; /* Facebook color */
+}
+
+footer .fa-instagram:hover {
+  color: #e4405f; /* Instagram color */
+}
+
+footer .fa-linkedin-in:hover {
+  color: #0077b5; /* LinkedIn color */
+}
+
+footer .fa-github:hover {
+  color: #333333; /* GitHub color */
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .section {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #background-image-section {
+    height: 200px; /* Reduce height on smaller screens if needed */
+  }
+}
+@media (max-width: 768px) {
+  #categories-section .card {
+    margin-bottom: 10px; /* Reduce bottom margin for smaller screens */
+  }
+}
+
+
+/* Define animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the fade-in animation by default */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.visible {
+  animation: fadeIn 1s forwards;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Card Styles */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Zoom Effect */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
